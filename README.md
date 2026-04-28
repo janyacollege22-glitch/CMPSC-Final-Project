@@ -82,7 +82,6 @@ The core game loop works as follows:
 **This Project was created as a school Final Project. For Educational Purposes only 
 
 **Project Review**
-Project Review
 So, for this project, I made a number-guessing game. The idea is pretty simple: the computer picks a random number, and you have to figure out what it is just by guessing. After each guess, it tells you if you went too high or too low, and you keep going until you either nail it or run out of tries. 
 The way the game works is that the computer secretly picks a number using a random number generator. randint, and then just waits for you to start guessing. You pick a difficulty at the start, which controls how big the range is and how many guesses you get. Easy is 1 to 50 with 15 lives, medium is 1 to 100 with 10, and hard goes all the way to 200 but only gives you 7 shots. Every wrong guess nudges you in the right direction, and if you are really far off, it tells you "much too high" or "much too low" so you are not totally lost.
 For the logic, I basically just used a while loop that keeps going until the player either guesses right or runs out of attempts. Inside the loop, there is an if statement comparing the guess to the secret number: too big, too small, or correct. The difficulty settings are stored in a dictionary, so I could just look up the range and attempt limit by name instead of writing out a separate block of code for every level. 
